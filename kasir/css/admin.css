@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body,
+section {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+}
+
+.satu {
+    overflow: hidden;
+
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    left: 0;
+    width: 200px;
+    /* Full width */
+}
+
+.color {
+    color: white;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.lunas {
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.belum {
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.sebagian {
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.item-1 {
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: skyblue;
+    border-right: 2px solid black;
+    text-align: center;
+
+}
+
+.satu li {
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a:active {
+    color: white;
+}
+
+.item-2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin: 1em 10px;
+    text-align: end;
+
+}
+
+.item-3 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    text-align: start;
+    margin: 1em 10px;
+}
+
+.item-4 {
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 6;
+    grid-column-end: 11;
+
+}
+
+.item-5 {
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 12;
+    grid-column-end: 17;
+
+}
+
+.item-6 {
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 18;
+    grid-column-end: 23;
+
+}
+
+.menu {
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 10px;
+}

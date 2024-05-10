@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+    
+  <div class="container">
+    <div class="item item-1">
+      <div class="satu">
+        <h1>chillwash</h1>
+       <nav>
+        <ul>
+          <br>
+          <h4>Transaksi</h4>
+          <br>
+          <li><a href="/app/admin.html" class="color">Buat transaksi</a></li>
+          <li><a href="/app/lihattransaksi.html">Lihat transaksi</a></li><br>
+          <h4>Member</h4>
+          <br>
+          <li><a href="#">Register member</a></li>
+          <li><a href="#">Lihat member</a></li>
+        </ul>
+       </nav>
+      </div>
+     </div>
+     
+     <div class="item item-4">
+      <div class="member">
+        <h1>Member</h1>
+          <div class="menu">
+              <h3>Nomor hp pengguna</h3>
+              <h5>0896######</h5>
+              <br>
+              <h3>nama</h3>
+              <h5>simon dimas</h5>
+              <br>
+              <h3>Tanggal</h3>
+              <h5>28-mei-200##</h5><br>
+              <h3>jenis cucian</h3>
+              <h5>expres</h5><br>
+              <h3>jumlah pakaian</h3>
+              <h5>100 pcs</h5><br>
+              <h3>total uang yang di bayar</h3>
+              <h5>Rp 150.000.00</h5><br>
+              <h3>total transaksi</h3>
+              <h5>Rp 200.000.00</h5><br>
+              <h3>kembalian</h3>
+              <h5>Rp 50.000.00</h5><br>
+              <button class="lunas">lunas</button>
+          </div>
+      </div>
+    </div>
+
+     <div class="item item-5">
+      <div class="member">
+        <h1>Non member</h1>
+          <div class="menu">
+              <h3>Nomor hp pengguna</h3>
+              <h5>0896######</h5>
+              <br>
+              <h3>nama</h3>
+              <h5>simon dimas</h5>
+              <br>
+              <h3>Tanggal</h3>
+              <h5>28-mei-200##</h5><br>
+              <h3>jenis cucian</h3>
+              <h5>expres</h5><br>
+              <h3>jumlah pakaian</h3>
+              <h5>100 pcs</h5><br>
+              <h3>total uang yang di bayar</h3>
+              <h5>Rp 150.000.00</h5><br>
+              <h3>total transaksi</h3>
+              <h5>Rp 200.000.00</h5><br>
+              <h3>kembalian</h3>
+              <h5>Rp 50.000.00</h5><br>
+              <button>belum lunas</button>
+          </div>
+      </div>
+    </div>
+
+     <div class="item item-6">
+      <div class="member">
+        <h1>Non member</h1>
+          <div class="menu">
+              <h3>Nomor hp pengguna</h3>
+              <h5>0896######</h5>
+              <br>
+              <h3>nama</h3>
+              <h5>simon dimas</h5>
+              <br>
+              <h3>Tanggal</h3>
+              <h5>28-mei-200##</h5><br>
+              <h3>jenis cucian</h3>
+              <h5>expres</h5><br>
+              <h3>jumlah pakaian</h3>
+              <h5>100 pcs</h5><br>
+              <h3>total uang yang di bayar</h3>
+              <h5>Rp 150.000.00</h5><br>
+              <h3>total transaksi</h3>
+              <h5>Rp 200.000.00</h5><br>
+              <h3>kembalian</h3>
+              <h5>Rp 50.000.00</h5><br>
+              <button class="sebagian">sebagian</button>
+          </div>
+      </div>
+    </div>
+
+     
+  </div>
+
+  <script>
+    // Mendapatkan tombol yang ada di dalam menu
+    const button = document.querySelector(".menu button");
+
+    // Menambahkan event listener untuk mendengarkan klik pada tombol
+    button.addEventListener("click", function() {
+        // Membuat dropdown untuk menampilkan pilihan "belum lunas" dan "lunas"
+        const dropdownMenu = document.createElement("div");
+        dropdownMenu.classList.add("dropdown-menu");
+
+        // Membuat pilihan "belum lunas"
+        const optionBelumLunas = document.createElement("div");
+        optionBelumLunas.classList.add("option");
+        optionBelumLunas.textContent = "Belum Lunas";
+        optionBelumLunas.addEventListener("click", function() {
+            // Mengubah teks tombol menjadi "belum lunas" dan menghapus dropdown
+            button.textContent = "belum lunas";
+            dropdownMenu.remove();
+        });
+        dropdownMenu.appendChild(optionBelumLunas);
+
+        // Membuat pilihan "lunas"
+        const optionLunas = document.createElement("div");
+        optionLunas.classList.add("option");
+        optionLunas.textContent = "Lunas";
+        optionLunas.addEventListener("click", function() {
+            // Mengubah teks tombol menjadi "lunas" dan menghapus dropdown
+            button.textContent = "lunas";
+            dropdownMenu.remove();
+
+            // Menyembunyikan tombol "belum lunas" saat "lunas" dipilih
+            optionBelumLunas.style.display = "none";
+        });
+        dropdownMenu.appendChild(optionLunas);
+
+        // Menempelkan dropdown ke dalam dokumen
+        button.parentNode.appendChild(dropdownMenu);
+
+        // Menyembunyikan tombol saat dropdown muncul
+        button.style.display = "none";
+    });
+</script>
+
+
+
+</body>
+</html>

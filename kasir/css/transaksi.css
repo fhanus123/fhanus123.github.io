@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body,
+section {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+}
+
+.satu {
+    overflow: hidden;
+
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    left: 0;
+    width: 200px;
+    /* Full width */
+}
+
+.color {
+    color: white;
+}
+
+.status {
+    display: flex;
+
+}
+
+.satu li {
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lunas {
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.border {
+    background-color: rgb(24, 155, 225);
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+
+.lunas1 {
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+.belum {
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.sebagian {
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.invi {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 5px 0;
+    font-weight: bold;
+}
+
+.action {
+    display: flex;
+
+}
+
+.action button {
+    border: none;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    color: white;
+}
+
+.item-1 {
+    grid-row-start: 1;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    background-color: skyblue;
+    border-right: 2px solid black;
+    text-align: center;
+
+}
+
+.item-4 {
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 6;
+    grid-column-end: 11;
+
+}
+
+.item-5 {
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 12;
+    grid-column-end: 17;
+
+}
+
+.item-6 {
+    grid-row-start: 1;
+    grid-row-end: 7;
+    grid-column-start: 18;
+    grid-column-end: 23;
+
+}
+
+.menu {
+    border: 2px black solid;
+    border-radius: 5px;
+    padding: 10px;
+}

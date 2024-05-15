@@ -17,52 +17,38 @@
 </head>
 
 <body>
- <!-- Navigation-->
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container px-4 px-lg-5">
-    <a class="navbar-brand" href="/">Fhanus Store</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#!">Home</a>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">Categories</a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li class="dropdown-submenu ">
-                  <a class="dropdown-item dropdown-toggle" href="#">Electronics</a>
-                  <ul class="dropdown-menu">
-                    <li><label for="laptops" class="mb-3 ms-2 mb-2" style=" text-decoration: none; color: black;"><a href="#">Laptops</a></label></li>
-                    <li><label for="smartphones" class="mb-3 ms-2 mb-2" style="cursor: pointer; text-decoration: none; color: black;"><a href="#">Smartphones</a></label></li>
-                    <li><label for="tablets" class="mb-3 ms-2 mb-2" style="cursor: pointer; text-decoration: none; color: black;"><a href="#">Tablets</a></label></li>
-                  </ul>
-                </li>
-                <!-- Add more categories and subcategories if needed -->
-          </ul> 
-      </li>
-      
-      
-      </ul>
-      <form class="d-flex me-auto">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-dark" type="submit">Search</button>
-    </form>
-      <form class="d-flex">
-        <button class="btn btn-outline-dark" type="submit">
-          <i class="bi-cart-fill me-1"></i>
-          Cart
-          <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-        </button>
-      </form>
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="/">Fhanus Store</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#!">Home</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="/web-ecommers/Homepage Website/about.html">About</a></li>
+
+
+
+        </ul>
+        <form class="d-flex me-auto">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark" type="submit">Search</button>
+        </form>
+        <form class="d-flex">
+          <button class="btn btn-outline-dark" type="submit">
+            <i class="bi-cart-fill me-1">Cart</i>
+
+            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+          </button>
+        </form>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
   <!-- Header-->
   <header class="bg-dark py-5">
     <div class="container px-4 px-lg-5 my-5">
@@ -80,21 +66,39 @@
       <!-- Add your images here -->
       <div class="row justify-content-center">
         <!-- Electronic Image -->
-        <div class="col-md-3 mb-4">
-         <a href=""> <img src="/web-ecommers/Homepage Website/assets/item/953322_OE60WU0.jpg" class="img-fluid " alt="Electronic Image"></a>
-          <!-- Text Centered Below Image -->
-          <div class="text-center">
-            <p class="fw-bold">Electronic Item</p>
-          </div>
-        </div>
-        <!-- Home Appliance Image -->
-        <div class="col-md-3 mb-4">
-          <a href="/web-ecommers/Homepage Website/perlengkapan-rumah.html"></a><img src="/web-ecommers/Homepage Website/assets/item/905545_OAYY380.jpg" class="img-fluid " alt="Home Appliance Image">
+        <div class="col-md-3 mb-4 d-flex flex-column align-items-center">
+          <a href="/web-ecommers/Homepage Website/perlengkapan-rumah.html">
+            <img src="/web-ecommers/Homepage Website/assets/item/pc-system-sales-svgrepo-com.svg"
+              class="img-fluid small-img" alt="electronic">
+          </a>
           <!-- Text Centered Below Image -->
           <div class="text-center">
             <p class="fw-bold">Home Appliance</p>
           </div>
         </div>
+        <!-- Home Appliance Image -->
+        <div class="col-md-3 mb-4 d-flex flex-column align-items-center">
+          <a href="/web-ecommers/Homepage Website/perlengkapan-rumah.html">
+            <img src="/web-ecommers/Homepage Website/assets/item/home-svgrepo-com (1).svg" class="img-fluid small-img"
+              alt="Home Appliance Image">
+          </a>
+          <!-- Text Centered Below Image -->
+          <div class="text-center">
+            <p class="fw-bold">Home Appliance</p>
+          </div>
+        </div>
+        <!-- Home Appliance Image -->
+        <div class="col-md-3 mb-4 d-flex flex-column align-items-center">
+          <a href="/web-ecommers/Homepage Website/perlengkapan-rumah.html">
+            <img src="/web-ecommers/Homepage Website/assets/item/clothes-laundry-fashion-svgrepo-com.svg"
+              class="img-fluid small-img" alt="Home Appliance Image">
+          </a>
+          <!-- Text Centered Below Image -->
+          <div class="text-center">
+            <p class="fw-bold">clothes</p>
+          </div>
+        </div>
+        <!--  -->
         <!-- Other Images -->
         <!-- Add more image divs with text here -->
       </div>
@@ -307,9 +311,75 @@
   <!-- Footer-->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">
-        Copyright &copy; Your Website 2023
-      </p>
+      <div class="row">
+        <!-- Customer Service Section -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-uppercase text-white mb-4">Customer Service</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#!" style="text-decoration: none;" class="text-white">Help & Contact Us</a></li>
+            <li class="mb-2"><a href="#!" style="text-decoration: none;" class="text-white">Returns & Refunds</a></li>
+            <li class="mb-2"><a href="#!" style="text-decoration: none;" class="text-white">Online Stores</a></li>
+            <li class="mb-2"><a href="#!" style="text-decoration: none;" class="text-white">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <!-- Company Section -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-uppercase text-white mb-4">Company</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#!" style="text-decoration: none;" class="text-white">What We Do</a></li>
+            <li class="mb-2"><a href="#!" style="text-decoration: none;" class="text-white">Available Services</a></li>
+            <li class="mb-2"><a href="#!" style="text-decoration: none;" class="text-white">Latest Posts</a></li>
+            <li class="mb-2"><a href="#!" style="text-decoration: none;" class="text-white">FAQs</a></li>
+          </ul>
+        </div>
+        <!-- Quick Links Section -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-uppercase text-white mb-4">Quick Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a href="#!" style="text-decoration: none;" class="text-white text-decoration">Home</a>
+            </li>
+            <li class="mb-2"><a href="#!" style="text-decoration: none;" class="text-white">About</a></li>
+            <li class="mb-2"><a href="#!" style="text-decoration: none;" class="text-white">Shop</a></li>
+            <li class="mb-2"><a href="#!" style="text-decoration: none;" class="text-white">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter Section -->
+        <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <h5 class="text-uppercase text-white mb-4">Newsletter</h5>
+          <p class="text-white mb-4">Subscribe to our newsletter for the latest updates and offers.</p>
+          <form action="#">
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your Email" aria-label="Your Email"
+                aria-describedby="button-addon2">
+              <button class="btn btn-outline-light" type="submit" id="button-addon2">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr class="mb-4">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center text-lg-start">
+          <p class="m-0 text-white">&copy; 2024 Fhanus Store. All Rights Reserved.</p>
+        </div>
+        <div class="col-lg-6 h-100 text-center text-lg-end">
+          <p class="m-0 text-white ">
+            Follow us on social media:
+            <!-- Social media icons -->
+            <a href="#" class="text-white me-4">
+              <i class="bi-facebook fs-3"></i>
+            </a>
+            <a href="#" class="text-white me-4">
+              <i class="bi-twitter fs-3"></i>
+            </a>
+            <a href="#" class="text-white me-4">
+              <i class="bi-instagram fs-3"></i>
+            </a>
+            <a href="#" class="text-white me-4">
+              <i class="bi-linkedin fs-3"></i>
+            </a>
+          </p>
+        </div>
+      </div>
     </div>
   </footer>
   <!-- Bootstrap JS -->

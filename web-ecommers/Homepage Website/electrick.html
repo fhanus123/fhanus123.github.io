@@ -17,38 +17,52 @@
 </head>
 
 <body>
-  <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container px-4 px-lg-5">
-      <a class="navbar-brand" href="/">Fhanus Store</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#!">Home</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
-
-
-
-        </ul>
-        <form class="d-flex me-auto">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-dark" type="submit">Search</button>
-        </form>
-        <form class="d-flex">
-          <button class="btn btn-outline-dark" type="submit">
-            <i class="bi-cart-fill me-1"></i>
-            Cart
-            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-          </button>
-        </form>
-      </div>
+ <!-- Navigation-->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container px-4 px-lg-5">
+    <a class="navbar-brand" href="/">Fhanus Store</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#!">Home</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Categories</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li class="dropdown-submenu ">
+                  <a class="dropdown-item dropdown-toggle" href="#">Electronics</a>
+                  <ul class="dropdown-menu">
+                    <li><label for="laptops" class="mb-3 ms-2 mb-2" style=" text-decoration: none; color: black;"><a href="#">Laptops</a></label></li>
+                    <li><label for="smartphones" class="mb-3 ms-2 mb-2" style="cursor: pointer; text-decoration: none; color: black;"><a href="#">Smartphones</a></label></li>
+                    <li><label for="tablets" class="mb-3 ms-2 mb-2" style="cursor: pointer; text-decoration: none; color: black;"><a href="#">Tablets</a></label></li>
+                  </ul>
+                </li>
+                <!-- Add more categories and subcategories if needed -->
+          </ul> 
+      </li>
+      
+      
+      </ul>
+      <form class="d-flex me-auto">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+    </form>
+      <form class="d-flex">
+        <button class="btn btn-outline-dark" type="submit">
+          <i class="bi-cart-fill me-1"></i>
+          Cart
+          <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+        </button>
+      </form>
     </div>
-  </nav>
+  </div>
+</nav>
   <!-- Header-->
   <header class="bg-dark py-5">
     <div class="container px-4 px-lg-5 my-5">
@@ -67,19 +81,15 @@
       <div class="row justify-content-center">
         <!-- Electronic Image -->
         <div class="col-md-3 mb-4">
-          <a href="/web-ecommers/Homepage Website/electrick.html"><img
-              src="/web-ecommers/Homepage Website/assets/item/953322_OE60WU0.jpg" class="img-fluid img-thumbnail small"
-              alt="Electronic Image"></a>
+         <a href=""> <img src="/web-ecommers/Homepage Website/assets/item/953322_OE60WU0.jpg" class="img-fluid " alt="Electronic Image"></a>
           <!-- Text Centered Below Image -->
           <div class="text-center">
             <p class="fw-bold">Electronic Item</p>
-          </div>s
+          </div>
         </div>
         <!-- Home Appliance Image -->
         <div class="col-md-3 mb-4">
-          <a href="/web-ecommers/Homepage Website/perlengkapan-rumah.html"><img
-              src="/web-ecommers/Homepage Website/assets/item/905545_OAYY380.jpg" class="img-fluid img-thumbnail small"
-              alt="Home Appliance Image"></a>
+          <img src="path/to/home-appliance-image.jpg" class="img-fluid " alt="Home Appliance Image">
           <!-- Text Centered Below Image -->
           <div class="text-center">
             <p class="fw-bold">Home Appliance</p>
@@ -297,35 +307,9 @@
   <!-- Footer-->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6 h-100 text-center text-lg-start">
-          <p class="m-0 text-white">
-            Follow us on social media:
-            <!-- Social media icons -->
-            <a href="#" class="text-white me-4">
-              <i class="bi-facebook fs-3"></i>
-            </a>
-            <a href="#" class="text-white me-4">
-              <i class="bi-twitter fs-3"></i>
-            </a>
-            <a href="#" class="text-white me-4">
-              <i class="bi-instagram fs-3"></i>
-            </a>
-            <a href="#" class="text-white me-4">
-              <i class="bi-linkedin fs-3"></i>
-            </a>
-          </p>
-        </div>
-        <div class="col-lg-6 h-100 text-center text-lg-end">
-          <p class="m-0 text-white">
-            Upcoming events:
-            <!-- Event links -->
-            <a href="#" class="text-white ms-3">Event 1</a>
-            <a href="#" class="text-white ms-3">Event 2</a>
-            <a href="#" class="text-white ms-3">Event 3</a>
-          </p>
-        </div>
-      </div>
+      <p class="m-0 text-center text-white">
+        Copyright &copy; Your Website 2023
+      </p>
     </div>
   </footer>
   <!-- Bootstrap JS -->
